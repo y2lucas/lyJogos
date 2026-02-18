@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="light_mode">
+    <!-- Header opções -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary p-0">
+            <article class="container-fluid fundo_background">
+
+                <!-- Logo à esquerda -->
+                <a class="navbar-brand" href="#">
+                    <img src="logo/logo_site.png" alt="Logo" class="d-inline-block align-text-end">
+                    LyJogos
+                </a>
+
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <aside class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Descontos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lista de desejos</a>
+                        </li>
+                    </ul>
+                </aside>
+
+            </article>
+        </nav>
+
+        <div class="text-end mt-5 me-5 position-sticky mode_cor">
+           <img src="logo/icone_darkmode.png" alt="Dark mode" class="dark_mode_img " onclick="MudarModo()">
+            <img src="logo/icone_lightmode.png" alt="Light Mode" class="light_mode_img" onclick="MudarModo()">
+        </div>
+
+
+
+    </header>
+
+
+
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

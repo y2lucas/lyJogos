@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Azul-Marinho: #15173D;
+    --Roxo-Vivo: #982598;
+    --Rosa-Suave: #E491C9;
+    --Branco-Rosado: #F1E9E9;
+    --Preto: #000000;
+    --Branco: #FFFFFF;
+}
+
+.fundo_background {
+    background-color: var(--Azul-Marinho);
+}
+
+.fundo_background a {
+    text-decoration: none;
+    color: var(--Branco);
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.fundo_background img {
+    height: 40px;
+    width: 40px;
+}
+
+.mode_cor img {
+    height: 45px;
+    width: 45px;
+    
+    margin: 10px;
+    border-radius: 12px;
+   opacity: 0.9;
+   
+}
+
+.light_mode {
+    background-color: var(--Branco);
+    color: var(--Preto);
+}   
+.dark_mode {
+    background-color: var(--Azul-Marinho);
+    color: var(--Branco);
+}
