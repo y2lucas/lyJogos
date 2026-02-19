@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -13,55 +13,56 @@
 <body class="dark_mode">
     <!-- Header opções -->
 
-<header class="header-sticky">
-    <nav class="navbar navbar-expand-md">
-        <div class="container-fluid px-4 fundo_background">
-            <!-- Logo à esquerda -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/logo/logo_site.png" alt="Logo" class="me-3" style="height: 45px; width: auto;">
-                <span class="logo-text">LyJogos</span>
-            </a>
+    <header class="header-sticky">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid px-4 fundo_background">
+                <!-- Logo à esquerda -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="img/logo/logo_site.png" alt="Logo" class="me-3" style="height: 45px; width: auto;">
+                    <span class="logo-text">LyJogos</span>
+                </a>
 
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav gap-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Categorias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Descontos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Lançamentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Lista de desejos</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Descontos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lista de desejos</a>
+                        </li>
+                    </ul>
 
-             
-                <div class="ms-4">
-                    <img src="img/logo/icone_darkmode.png" alt="Alternar modo" class="mode_img" onclick="MudarModo()" style="cursor: pointer;">
+
+                    <div class="ms-4">
+                        <img src="img/logo/icone_lightmode.png" alt="Alternar modo" class="mode_img"
+                            onclick="MudarModo()" style="cursor: pointer;">
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
     <!-- Contéudo principal do site -->
     <main>
         <!--Slogan-->
 
-        <div class="container text-center">
-            <div class="row container-grid mt-5">
+        <article class="container text-center">
+            <aside class="row container-grid mt-5">
                 <div class="col d-flex align-items-center justify-content-center slogan">
                     <h1>Respire fundo. O salto dói MENOS que ficar PARADO. Baixe Celeste AGORA e CONQUISTE o topo!
                         <br>
@@ -76,21 +77,23 @@
                     <img src="img/Celeste/madeline_celeste.png" alt="Madeline Celeste">
                 </div>
 
-            </div>
-        </div>
+            </aside>
+        </article>
 
-        <!-- Mais Jogados -->
+        <!-- Descontos -->
 
 
         <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
 
             <h1 class="text-center mt-5">Descontos</h1>
             <div class="carousel-item active mt-5">
-                <div class="container-sm">
-                    <div class="row">
-                        <div class="col-lg">
+                <article class="container-sm">
+                    <aside class="row">
+
+                        <aside class="col-lg">
                             <div class="card h-200 border-1 shadow-sm p-3">
-                                <img src="img/Residente_Evil/Capa_Resident_Evil4.jpg" class="card-img-top" alt="Tênis Nike">
+                                <img src="img/Residente_Evil/Capa_Resident_Evil4.jpg" class="card-img-top"
+                                    alt="Tênis Nike">
                                 <div class="card-body px-0">
                                     <h3 class="card-title">Resident Evil 4</h3>
                                     <h4 class="fw-bold mb-0">R$ 67,60 </h4>
@@ -100,10 +103,10 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </aside>
 
 
-                        <div class="col-lg">
+                        <aside class="col-lg">
                             <div class="card h-200 border-1 shadow-sm p-3">
                                 <img src="img/Persona/capa_persona.jpg" class="card-img-top" alt="Tênis Nike">
                                 <div class="card-body px-0">
@@ -115,11 +118,12 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </aside>
 
-                        <div class="col-lg">
+                        <aside class="col-lg">
                             <div class="card h-200 border-1 shadow-sm p-3">
-                                <img src="img/The_Last_Of_Us/The_Last_of_Us_2_capa.png" class="card-img-top" alt="Tênis Nike">
+                                <img src="img/The_Last_Of_Us/The_Last_of_Us_2_capa.png" class="card-img-top"
+                                    alt="Tênis Nike">
                                 <div class="card-body px-0">
                                     <h3 class="card-title">The Last of Us™ Parte II</h3>
                                     <h4 class="fw-bold mb-0">R$ 79,98</h4>
@@ -129,10 +133,10 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </aside>
 
 
-                        <div class="col-lg">
+                        <aside class="col-lg">
                             <div class="card h-200 border-1 shadow-sm p-3">
                                 <img src="img/Cuphead/Cuphead_capa.png" class="card-img-top" alt="Tênis Nike">
                                 <div class="card-body px-0">
@@ -144,26 +148,18 @@
 
                                 </div>
                             </div>
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    </div>
-                </div>
+                        </aside>
+              
+                </article>
 
 
             </div>
         </div>
+
+        <!-- fazer as Categorias dos jogos  -->
+
+
+
 
 
 

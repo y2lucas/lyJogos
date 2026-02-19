@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 html, body {
-    
+  
     height: 100%;
     
 }
@@ -15,73 +15,16 @@ html, body {
     --Roxo-Vivo: #982598;
     --Rosa-Suave: #E491C9;
     --Branco-Rosado: #F1E9E9;
+    --Azul-Noturno: #0B0F2A;     
+    --Ciano-Neon: #00E5FF;       
+    --Verde-Menta: #2EE6A6;     
+    --Cinza-Azul: #1F254A;    
     --Preto: #000000;
     --Branco: #FFFFFF;
-}
-
-
-
-.fundo_background a {
-    color: var(--Branco);
-    font-size: 22px;
-    font-weight: bold;
 
 }
-.light_mode {
-    background-color: var(--Branco);
-    color: var(--Preto);
-}   
-.dark_mode {
-    background-color: var(--Azul-Marinho);
-    color: var(--Branco);
-}
 
 
-.mode_img {
-    transition: 0.3s ease;
-}
-
-.dark_mode .mode_img {
-    filter: invert(1);
-}
-
-.slogan{
-    font-family: 'Renogare', monospace;
-    font-weight: bold;
-}
-
-.logo_celeste{
-    height: 150px;
-    width: 150px;
-    object-fit: contain;
-}
-
-.container-grid{
-   border: solid 1px var(--Rosa-Suave);
-   background-image:url(../img/Celeste/fundo_celeste.jpg);
-   object-fit: contain;
-   border-radius: 12px;
-}
-
-
-
-.card-title {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.card img {
-    object-fit: contain;
-    height: 200px;
-}
-
-.card{
-    background-color: rgb(10, 22, 33);
-    color: var(--Branco);
-}
-.card-body button{
-   margin-top: 10px;
-}
 
 .header-sticky {
     position: sticky;
@@ -144,3 +87,85 @@ html, body {
 .mode_cor {
     display: none; 
 }
+
+
+
+.fundo_background a {
+    color: var(--Branco);
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.light_mode {
+    background-color: var(--Branco);
+    color: var(--Preto);
+}   
+.dark_mode {
+    background-color: var(--Azul-Marinho);
+    color: var(--Branco);
+}
+
+
+.mode_img {
+    transition: 0.3s ease;
+}
+
+.dark_mode .mode_img {
+    filter: invert(1);
+}
+
+.slogan{
+    font-family: 'Renogare', monospace;
+    font-weight: bold;
+}
+
+.logo_celeste{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.container-grid{
+   border: solid 1px var(--Rosa-Suave);
+   background-image:url(../img/Celeste/fundo_celeste.jpg);
+   object-fit: contain;
+   border-radius: 12px;
+}
+
+
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F0F4F8;
+}
+
+.card img {
+    object-fit: contain;
+    height: 200px;
+   
+}
+
+.card{
+   
+    color: var(--Branco);
+    background-color:#0e0f27;
+ 
+     border-radius: 12px;
+     transition: all 0.3s ease;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5)
+}
+.card h4{
+    color: #E9F056;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    border-color: #58A6FF;
+}
+.card-body button{
+   margin-top: 10px;
+}
+
