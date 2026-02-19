@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/renogare');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+html, body {
+    
+    height: 100%;
+    
+}
 :root {
     --Azul-Marinho: #15173D;
     --Roxo-Vivo: #982598;
@@ -15,33 +19,14 @@
     --Branco: #FFFFFF;
 }
 
-.fundo_background {
-    background-color: var(--Azul-Marinho);
-}
+
 
 .fundo_background a {
-    text-decoration: none;
     color: var(--Branco);
     font-size: 22px;
     font-weight: bold;
 
 }
-
-.fundo_background img {
-    height: 40px;
-    width: 40px;
-}
-
-.mode_cor img {
-    height: 45px;
-    width: 45px;
-    
-    margin: 10px;
-    border-radius: 12px;
-   opacity: 0.9;
-   
-}
-
 .light_mode {
     background-color: var(--Branco);
     color: var(--Preto);
@@ -49,4 +34,113 @@
 .dark_mode {
     background-color: var(--Azul-Marinho);
     color: var(--Branco);
+}
+
+
+.mode_img {
+    transition: 0.3s ease;
+}
+
+.dark_mode .mode_img {
+    filter: invert(1);
+}
+
+.slogan{
+    font-family: 'Renogare', monospace;
+    font-weight: bold;
+}
+
+.logo_celeste{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.container-grid{
+   border: solid 1px var(--Rosa-Suave);
+   background-image:url(../img/Celeste/fundo_celeste.jpg);
+   object-fit: contain;
+   border-radius: 12px;
+}
+
+
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card img {
+    object-fit: contain;
+    height: 200px;
+}
+
+.card{
+    background-color: rgb(10, 22, 33);
+    color: var(--Branco);
+}
+.card-body button{
+   margin-top: 10px;
+}
+
+.header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(21, 23, 61, 0.85); 
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(228, 145, 201, 0.2); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8rem;
+    color: var(--Branco);
+    text-shadow: 0 0 8px rgba(168, 85, 247, 0.4); 
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--Branco) !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--Roxo-Vivo) !important; 
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background: var(--Roxo-Vivo);
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.mode_img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mode_img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px rgba(228, 145, 201, 0.6); 
+}
+
+
+.mode_cor {
+    display: none; 
 }

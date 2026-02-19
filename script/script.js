@@ -1,19 +1,18 @@
-let body = document.body;  // mais direto que querySelector("body")
+let body = document.body;
+let div_mode = document.querySelector('.mode_cor');
 
 function MudarModo() {
-    const isLight = body.classList.contains("light_mode");
-    const img = document.querySelector(".light_mode_img");
+    let imgAtual = document.querySelector('.mode_img');
 
-    if (!img) {
-        console.warn("Imagem .light_mode_img não encontrada!");
-        return;
-    }
-
-    if (isLight) {
-        body.classList.replace("light_mode", "dark_mode");
-        img.style.filter = "brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(1352%) hue-rotate(86deg) brightness(118%) contrast(119%)"; // preto → verde
-    } else {
+  
+    if (body.classList.contains("dark_mode")) {
         body.classList.replace("dark_mode", "light_mode");
-        img.style.filter = "none"; // ou outro valor pro modo claro
+        imgAtual.src = "img/logo/icone_darkmode.png"; 
+    }
+    else {
+        body.classList.replace("light_mode", "dark_mode");
+        imgAtual.src = "img/logo/icone_lightmode.png";
     }
 }
+
+

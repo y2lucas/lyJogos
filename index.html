@@ -10,57 +10,164 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body class="light_mode">
+<body class="dark_mode">
     <!-- Header opções -->
-    <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary p-0">
-            <article class="container-fluid fundo_background">
 
-                <!-- Logo à esquerda -->
-                <a class="navbar-brand" href="#">
-                    <img src="logo/logo_site.png" alt="Logo" class="d-inline-block align-text-end">
-                    LyJogos
-                </a>
+<header class="header-sticky">
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid px-4 fundo_background">
+            <!-- Logo à esquerda -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo/logo_site.png" alt="Logo" class="me-3" style="height: 45px; width: auto;">
+                <span class="logo-text">LyJogos</span>
+            </a>
 
-                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Descontos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lançamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lista de desejos</a>
+                    </li>
+                </ul>
 
-                <aside class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+             
+                <div class="ms-4">
+                    <img src="img/logo/icone_darkmode.png" alt="Alternar modo" class="mode_img" onclick="MudarModo()" style="cursor: pointer;">
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Categorias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Descontos </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Lançamentos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Lista de desejos</a>
-                        </li>
-                    </ul>
-                </aside>
+    <!-- Contéudo principal do site -->
+    <main>
+        <!--Slogan-->
 
-            </article>
-        </nav>
+        <div class="container text-center">
+            <div class="row container-grid mt-5">
+                <div class="col d-flex align-items-center justify-content-center slogan">
+                    <h1>Respire fundo. O salto dói MENOS que ficar PARADO. Baixe Celeste AGORA e CONQUISTE o topo!
+                        <br>
+                        <img src="img/Celeste/logo_celeste.png" alt="Logo Celeste" class="logo_celeste">
+                        <button type="button" class="btn btn-success mt-2">
+                            <h2>Compre já</h2>
+                        </button>
+                    </h1>
 
-        <div class="text-end mt-5 me-5 position-sticky mode_cor">
-           <img src="logo/icone_darkmode.png" alt="Dark mode" class="dark_mode_img " onclick="MudarModo()">
-            <img src="logo/icone_lightmode.png" alt="Light Mode" class="light_mode_img" onclick="MudarModo()">
+                </div>
+                <div class="col">
+                    <img src="img/Celeste/madeline_celeste.png" alt="Madeline Celeste">
+                </div>
+
+            </div>
         </div>
 
-<!--Ajutas o dark_mode e pegar ref do site é lembrar da steam-->
+        <!-- Mais Jogados -->
 
-    </header>
+
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <h1 class="text-center mt-5">Descontos</h1>
+            <div class="carousel-item active mt-5">
+                <div class="container-sm">
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="card h-200 border-1 shadow-sm p-3">
+                                <img src="img/Residente_Evil/Capa_Resident_Evil4.jpg" class="card-img-top" alt="Tênis Nike">
+                                <div class="card-body px-0">
+                                    <h3 class="card-title">Resident Evil 4</h3>
+                                    <h4 class="fw-bold mb-0">R$ 67,60 </h4>
+                                    <button type="button" class="btn btn-success p-2">Comprar</button>
+                                    <button type="button" class="btn btn-info">Adicionar ao carrinho
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg">
+                            <div class="card h-200 border-1 shadow-sm p-3">
+                                <img src="img/Persona/capa_persona.jpg" class="card-img-top" alt="Tênis Nike">
+                                <div class="card-body px-0">
+                                    <h3 class="card-title">Persona 3 Reload</h3>
+                                    <h4 class="fw-bold mb-0">R$ 99,96</h4>
+                                    <button type="button" class="btn btn-success">Comprar</button>
+                                    <button type="button" class="btn btn-info">Adicionar ao carrinho
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg">
+                            <div class="card h-200 border-1 shadow-sm p-3">
+                                <img src="img/The_Last_Of_Us/The_Last_of_Us_2_capa.png" class="card-img-top" alt="Tênis Nike">
+                                <div class="card-body px-0">
+                                    <h3 class="card-title">The Last of Us™ Parte II</h3>
+                                    <h4 class="fw-bold mb-0">R$ 79,98</h4>
+                                    <button type="button" class="btn btn-success">Comprar</button>
+                                    <button type="button" class="btn btn-info">Adicionar ao carrinho
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg">
+                            <div class="card h-200 border-1 shadow-sm p-3">
+                                <img src="img/Cuphead/Cuphead_capa.png" class="card-img-top" alt="Tênis Nike">
+                                <div class="card-body px-0">
+                                    <h3 class="card-title">CupHead</h3>
+                                    <h4 class="fw-bold mb-0">R$ 36,99</h4>
+                                    <button type="button" class="btn btn-success">Comprar</button>
+                                    <button type="button" class="btn btn-info">Adicionar ao carrinho
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </main>
 
 
 
